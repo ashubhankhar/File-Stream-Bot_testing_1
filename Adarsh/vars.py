@@ -8,18 +8,18 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    PICS = (environ.get('PICS','')).split()
-    BOT_TOKEN = str(getenv('BOT_TOKEN', ''))
+    API_ID = int(getenv('API_ID', '29640594'))
+    API_HASH = str(getenv('API_HASH', '425945b03d2da856ab43e3f20e5570b7'))
+    PICS = (environ.get('PICS','https://te.legra.ph/file/a6d95e23074dd13683554.jpg')).split()
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '6755031145:AAHn-n73P5iHLxvgkEW6Q1zwXp_F3hxXcl8'))
     name = str(getenv('name', 'NobitaStreamBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', ''))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002242540576'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())  
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "6706180358").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'CodeXBro'))
@@ -35,6 +35,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', ''))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'RahulReviewsYT'))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://Tn69Links:epiIlhWaO1B0FG71@cluster0.ldwpogq.mongodb.net/?retryWrites=true&w=majority'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Dramafilez'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))
